@@ -1,85 +1,123 @@
-Library Management System
-Welcome to the Library Management System, a web-based application designed to automate and streamline library operations. Built with Flask and featuring an intuitive frontend, this system empowers librarians to efficiently manage books, members, and borrowing activities. With a real-time statistics dashboard and interactive pie chart visualization, it provides insights into book distribution by genre and other key metrics.
+📚 Library Management System 🚀
+🌟 Overview
 
-🚀 Overview
-This project simplifies essential library tasks such as adding, deleting, issuing, returning, and reserving books, while tracking critical metrics like total books, available books, borrowed books, overdue books, and genre popularity. Leveraging optimized data structures and algorithms, it ensures high performance and scalability, making it an excellent resource for learning web development and DSA concepts.
+Welcome to the Library Management System, your ultimate tool for efficiently managing library operations, tracking book activities, and gaining insights into library usage. Whether you're a librarian or an educational institution, this system keeps your book collection organized and optimized. 📖📊
 
-🔹 Key Features
-✅ Book Management: Add, delete, issue, return, and reserve books with attributes like title, author, genre, ISBN, year, and copies.
+✨ Features
 
-✅ Member Management: Track members and their borrowing history.
+✅ Book Management – Add, delete, issue, return, and reserve books with attributes like title, author, genre, ISBN, year, and copies.
 
-✅ Search & Filtering: Easily find books by title, author, or ISBN.
+✅ Real-Time Book Tracking – Monitor available, borrowed, and overdue books.
 
-✅ Statistics Dashboard: View real-time metrics (total books, available books, borrowed books, overdue books, most borrowed genre) with an interactive pie chart.
+✅ Borrowing History – Maintain a detailed log of all borrowing transactions.
 
-✅ User-Friendly UI: Clean, responsive design with an intuitive sidebar, card-based book display, and interactive forms.
+✅ Low Availability Alerts – Get notified about books with low copies.
 
-✅ Optimized Data Handling: Uses efficient data structures to ensure fast and scalable operations.
+✅ Data Visualization – View statistics (total books, popular genres) with an interactive pie chart.
 
-🛠️ Tech Stack
-Backend: Flask (Python 3.x)
+🛠 Technologies Used
 
-Frontend: HTML5, CSS3, JavaScript (Chart.js for visualizations)
+🔹 Python – Core programming language for backend logic.
 
-Dependencies: Managed via requirements.txt
+🔹 Flask – Lightweight web framework for API and server management.
 
-🧩 Data Structures & Algorithms (DSA)
-🔹 Hash Map (dict): Quick lookup for books and members with O(1) operations.
+🔹 HTML5/CSS3/JavaScript – For a responsive and interactive frontend (Chart.js for visualizations).
 
-🔹 List (list): Stores borrowing history efficiently with O(1) append.
+🔹 Collections Module – Powers advanced data structures (Deque, Defaultdict).
 
-🔹 Deque (collections.deque): Manages book reservations with O(1) enqueue/dequeue for a FIFO queue.
+🔹 Heapq – For efficient overdue book tracking.
 
-🔹 Min-Heap (heapq): Tracks overdue books with O(log n) insert and O(1) min access.
+🔹 Datetime – For precise transaction timestamps.
 
-🔹 Defaultdict (collections.defaultdict): Efficiently updates genre popularity in O(1) time.
+⚙️ Installation
 
-📥 Installation
-🔹 Prerequisites
-Python 3.x
+📌 Prerequisites
 
-Git (for cloning the repository)
+Ensure you have Python 3.x and Git installed. Download Python from python.org.
 
-A web browser (Chrome, Firefox, etc.)
+🚀 Setup Steps
 
-🔹 Steps
-Clone the Repository:
+1️⃣ Clone the Repository:
 
 bash
+
+Collapse
+
+Wrap
+
 Copy
 git clone https://github.com/zinal2004/Library-Management-System.git
 cd Library-Management-System
-Install Dependencies:
+2️⃣ Install Dependencies:
 
 bash
+
+Collapse
+
+Wrap
+
 Copy
 pip install -r requirements.txt
-Run the Application:
+3️⃣ Run the Application:
 
 bash
+
+Collapse
+
+Wrap
+
 Copy
 python app.py
-Access the Application:
-Open your browser and navigate to:
+4️⃣ Access the Application:
+
+Open your browser and navigate to: 📌 http://127.0.0.1:5000
+
+📖 How to Use
+
+🏷 Adding a Book
+
+python
+
+Collapse
+
+Wrap
 
 Copy
-http://127.0.0.1:5000
-🎯 Usage Guide
-🔹 Navigation: Use the sidebar to switch between Books, Add Book, and Statistics sections.
+# Via UI: Fill the form with title, author, genre, ISBN, year, and copies, then click "Add Book"
+❌ Removing a Book
 
-🔹 Books Section: View a grid of books with details (title, author, genre, etc.), and perform actions like issue, return, reserve, or delete via dropdown menus.
+Select a book in the "Books" section and choose "Delete" from the dropdown.
+🔄 Issuing a Book
+Select a book with available copies and choose "Issue" to prompt for a member ID.
+📉 Checking Overdue Books
+View overdue books in the "Statistics" section.
+💾 Viewing Statistics
+Navigate to "Statistics" to see metrics and the genre distribution pie chart.
+📂 Project Structure
 
-🔹 Add Book: Fill out a form with book details (title, author, genre, ISBN, year, copies) and click "Add Book" to submit.
+text
 
-🔹 Statistics: View real-time library metrics with a pie chart showing genre distribution.
+Collapse
 
-🔹 Search: Use the search bar to filter books by title, author, or ISBN.
+Wrap
 
-🔧 Development
-🔹 Running Locally
-Ensure all dependencies are installed (see Installation steps).
+Copy
+Library-Management-System/
+│-- app.py              # Flask backend with API endpoints
+│-- database.py         # Core logic with data structures and methods
+│-- static/
+│   ├── styles.css      # CSS for UI styling
+│   ├── script.js       # JavaScript for frontend interactivity
+│-- templates/
+│   ├── index.html      # Main HTML template
+│-- requirements.txt    # Python dependencies
+│-- README.md           # Project documentation
 
-Modify app.py or database.py to add new features or fix bugs.
 
-Enable Flask debug mode (debug=True in app.py) for live reloading.
+👥 Contributors
+
+💡 Zinal Shah – Lead Developer & Architect
+
+📬 Contact
+
+📧 Feel free to reach out via zinalshah20@gmail.com or check out my work on GitHub.
