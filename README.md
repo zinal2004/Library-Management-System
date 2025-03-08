@@ -1,107 +1,102 @@
-📚 Library Management System 🚀
-🌟 Overview
+# 📚 Library Management System 🚀
 
-Welcome to the Library Management System, your ultimate tool for efficiently managing library operations, tracking book activities, and gaining insights into library usage. Whether you're a librarian or an educational institution, this system keeps your book collection organized and optimized. 📖📊
+## 🌟 Overview
 
-✨ Features
+Welcome to the Library Management System, your ultimate tool for efficiently managing library operations, tracking book activities, and gaining insights into library usage. Whether you're a librarian or an educational institution, this system keeps your book collection organized and optimized. 📚📊
 
-✅ Book Management – Add, delete, issue, return, and reserve books with attributes like title, author, genre, ISBN, year, and copies.
+## ✨ Features
 
-✅ Real-Time Book Tracking – Monitor available, borrowed, and overdue books.
+✅ **Book Management** – Add, delete, issue, return, and reserve books with attributes like title, author, genre, ISBN, year, and copies.
 
-✅ Borrowing History – Maintain a detailed log of all borrowing transactions.
+✅ **Real-Time Book Tracking** – Monitor available, borrowed, and overdue books.
 
-✅ Low Availability Alerts – Get notified about books with low copies.
+✅ **Borrowing History** – Maintain a detailed log of all borrowing transactions.
 
-✅ Data Visualization – View statistics (total books, popular genres) with an interactive pie chart.
+✅ **Low Availability Alerts** – Get notified about books with low copies.
 
-🛠 Technologies Used
+✅ **Data Visualization** – View statistics (total books, popular genres) with an interactive pie chart.
 
-🔹 Python – Core programming language for backend logic.
+## 🛠️ Technologies Used
 
-🔹 Flask – Lightweight web framework for API and server management.
+🔹 **Python** – Core programming language for backend logic.
 
-🔹 HTML5/CSS3/JavaScript – For a responsive and interactive frontend (Chart.js for visualizations).
+🔹 **Flask** – Lightweight web framework for API and server management.
 
-🔹 Collections Module – Powers advanced data structures (Deque, Defaultdict).
+🔹 **HTML5/CSS3/JavaScript** – For a responsive and interactive frontend (Chart.js for visualizations).
 
-🔹 Heapq – For efficient overdue book tracking.
+🔹 **Collections Module** – Powers advanced data structures (Deque, Defaultdict).
 
-🔹 Datetime – For precise transaction timestamps.
+🔹 **Heapq** – For efficient overdue book tracking.
 
-⚙️ Installation
+🔹 **Datetime** – For precise transaction timestamps.
 
-📌 Prerequisites
+## 🛠️ Data Structures Used
 
-Ensure you have Python 3.x and Git installed. Download Python from python.org.
+📚 **Hash Map (Dictionary)** – Used to store book information with quick lookup capabilities by ISBN or title.
 
-🚀 Setup Steps
+📝 **Linked List** – Maintains the borrowing history of books, ensuring efficient insertion and deletion of records.
 
-1️⃣ Clone the Repository:
+🛃 **Queue** – Manages book reservation requests, ensuring a first-come, first-served order for popular books.
 
-bash
+🔄 **Heap (Priority Queue)** – Used for tracking overdue books based on return deadlines, enabling efficient retrieval of the most overdue books.
 
-Collapse
 
-Wrap
+## ⚖️ Installation
 
-Copy
-git clone https://github.com/zinal2004/Library-Management-System.git
+### 📌 Prerequisites
+
+Ensure you have Python 3.x and Git installed. Download Python from [python.org](https://www.python.org/).
+
+### 🚀 Setup Steps
+
+1⃣ Clone the Repository:
+
+```sh
+git clone https://github.com/your-username/library-management-system.git
 cd Library-Management-System
-2️⃣ Install Dependencies:
+```
 
-bash
+2⃣ Install Dependencies:
 
-Collapse
-
-Wrap
-
-Copy
+```sh
 pip install -r requirements.txt
-3️⃣ Run the Application:
+```
 
-bash
+3⃣ Run the Application:
 
-Collapse
-
-Wrap
-
-Copy
+```sh
 python app.py
-4️⃣ Access the Application:
+```
 
-Open your browser and navigate to: 📌 http://127.0.0.1:5000
+4⃣ Access the Application:
 
-📖 How to Use
+Open your browser and navigate to: 📌 **http://127.0.0.1:5000**
 
-🏷 Adding a Book
+## 📚 How to Use
 
-python
+🌂 **Adding a Book**
 
-Collapse
+- Via UI: Fill the form with title, author, genre, ISBN, year, and copies, then click "Add Book".
 
-Wrap
+❌ **Removing a Book**
 
-Copy
-# Via UI: Fill the form with title, author, genre, ISBN, year, and copies, then click "Add Book"
-❌ Removing a Book
+- Select a book in the "Books" section and choose "Delete" from the dropdown.
 
-Select a book in the "Books" section and choose "Delete" from the dropdown.
-🔄 Issuing a Book
-Select a book with available copies and choose "Issue" to prompt for a member ID.
-📉 Checking Overdue Books
-View overdue books in the "Statistics" section.
-💾 Viewing Statistics
-Navigate to "Statistics" to see metrics and the genre distribution pie chart.
-📂 Project Structure
+🔄 **Issuing a Book**
 
-text
+- Select a book with available copies and choose "Issue" to prompt for a member ID.
 
-Collapse
+📉 **Checking Overdue Books**
 
-Wrap
+- View overdue books in the "Statistics" section.
 
-Copy
+💾 **Viewing Statistics**
+
+- Navigate to "Statistics" to see metrics and the genre distribution pie chart.
+
+## 📂 Project Structure
+
+```
 Library-Management-System/
 │-- app.py              # Flask backend with API endpoints
 │-- database.py         # Core logic with data structures and methods
@@ -112,12 +107,18 @@ Library-Management-System/
 │   ├── index.html      # Main HTML template
 │-- requirements.txt    # Python dependencies
 │-- README.md           # Project documentation
+```
 
+## 🌟 License
 
-👥 Contributors
+🔖 This project is licensed under the MIT License.
 
-💡 Zinal Shah – Lead Developer & Architect
+## 👥 Contributors
 
-📬 Contact
+💡 **Zinal Shah** – Lead Developer & Architect
 
-📧 Feel free to reach out via zinalshah20@gmail.com or check out my work on GitHub.
+## 💌 Contact
+
+📧 Feel free to reach out via **zinal200420@gamil.com** or check out my work on [GitHub](https://github.com/zinal2004).
+
+---
