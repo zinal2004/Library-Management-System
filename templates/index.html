@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Library System</h2>
+        <ul>
+            <li onclick="showSection('books')">Books</li>
+            <li onclick="showSection('add-book')">Add Book</li>
+            <li onclick="showSection('stats')">Statistics</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Books Section -->
+        <div id="books" class="section active">
+            <h1>Book Collection</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by title, author, or ISBN...">
+                <button onclick="searchBooks()">Search</button>
+            </div>
+            <div class="books-grid" id="booksGrid"></div>
+        </div>
+
+        <!-- Add Book Section -->
+        <div id="add-book" class="section">
+            <h1>Add New Book</h1>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Enter book title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" placeholder="Enter author name">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <select id="genre">
+                        <option value="Fiction">Fiction</option>
+                        <option value="Dystopia">Dystopia</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Science">Science</option>
+                        <option value="History">History</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="isbn" placeholder="Enter ISBN">
+                </div>
+                <div class="form-group">
+                    <label for="year">Publication Year</label>
+                    <input type="number" id="year" placeholder="Enter year" min="1000" max="2025">
+                </div>
+                <div class="form-group">
+                    <label for="copies">Number of Copies</label>
+                    <input type="number" id="copies" placeholder="Enter copies" min="1">
+                </div>
+                <button onclick="addBook()">Add Book</button>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div id="stats" class="section">
+            <h1>Library Statistics</h1>
+            <div class="stats-container">
+                <div id="statsText"></div>
+                <canvas id="genreChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
