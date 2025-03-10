@@ -109,10 +109,6 @@ Library-Management-System/
 │-- README.md           # Project documentation
 ```
 
-## 🌟 License
-
-🔖 This project is licensed under the MIT License.
-
 ## 👥 Contributors
 
 💡 **Zinal Shah** – Lead Developer & Architect
